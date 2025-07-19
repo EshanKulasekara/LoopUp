@@ -1,0 +1,9 @@
+.field input {
+   padding: 10px 20px;
+   border: 1px solid var(--primary-colour);
+   border-radius: 3px;
+}
+
+.field input:focus {
+   outline: none;
+}
