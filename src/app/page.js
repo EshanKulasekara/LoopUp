@@ -1,8 +1,19 @@
+'use client';
 import Link from 'next/link';
 import './home-page.css'
 import Button from '@/components/Button';
-import Field from '@/components/Field';
 import HomeWorkshopItem from '@/components/HomeWorkshopItem';
+
+import { loginWithGoogle } from '@/firebase/login';
+
+const handleLogin = async () => {
+  try{
+    const {user, token} = await loginWithGoogle();
+    console.log("User logged in:", user);
+  } catch(error) {
+    console.error("Login failed:", error);
+  }
+}
 
 export default function Home() {
   return (
@@ -10,7 +21,7 @@ export default function Home() {
       <div className='Header'>
         <h2>Logo</h2>
         <div className='Header-links'>
-          <Link href="/login">Login</Link>
+          <button onClick={handleLogin} className="Header-login-btn">Login</button>
           <Link href="/register">Register</Link>
         </div>
       </div>
