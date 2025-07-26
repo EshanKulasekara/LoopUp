@@ -1,0 +1,12 @@
+
+.Workshop-image{
+    width: 400px;
+    height: 300px;
+    background-color: pink;
+}
+
+.Workshop-item h2{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}

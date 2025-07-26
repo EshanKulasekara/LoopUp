@@ -3,10 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background-color: transparent;
-    position: absolute;
-    width: 100%;
-    z-index: 1000;
+    background-color: var(--primary-colour);
 }
 
 .Header-links {
@@ -16,45 +13,65 @@
 
 .Header-links a {
     text-decoration: underline;
-    color: #000;
+    color: white;
     font-family: sans-serif;
 }
 
-.Hero {
-    display: flex;
+.Title-section {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: var(--primary-colour);
+    color: white;
 }
 
-.Hero-image {
-    width: 50%;
-    height: 100vh;
+.Title-section h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.Title-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.Image-carausel {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
     background-color: red;
-    z-index: 1;
+    color: white;
 }
 
-.Hero-content {
-    width: 50%;
-    padding: 50px;
-    z-index: 2;
+.content-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column  ;
+    padding: 50px 40px;
+    background-color: green;
 }
 
-.Hero-content h1 {
-    font-size: 4rem;
-    line-height: 90%;
-    margin-bottom: 20px;
-}
-
-.Input-group {
-    width: 100%;
+.content-section .search-bar{
+    width: 70vw;
+    background-color: white;
     display: flex;
+    gap: 16px;
     align-items: center;
-    justify-content: left;
-    gap: 5px;
+    margin-bottom: 50px;
 }
 
-.Input-group .field input {
-    width: 30vw;
+.Workshop-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px; /* adjust as needed */
+}
+
+.featured-section h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
 }
